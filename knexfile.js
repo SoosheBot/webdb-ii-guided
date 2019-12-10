@@ -14,7 +14,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault:true, //only needed when using sqlite3
     connection: {
-      filename: './data/produce/db3' //where is the database file? this tells you
+      filename: './data/produce.db3' //where is the database file? this tells you
     },
     migrations: {
       directory: './data/migrations' //will be created automatically, unless you write this, then it tells it what to look at/teaches it how to connect

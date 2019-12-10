@@ -13,3 +13,7 @@ Migrations keep your db design in sync with the application code
  Update with everything you added in the knexfile notes to 'teach' knex how to connect to the db
 
  Finally, to create a migration, type: `knex migrate:make and then your migrationName -- in this example we used 'addVeggieTable,' b/c we want to add a Veggies table to the produce.db3`
+
+ To run a migration type: `knex migrate:latest` //updates database to latest version
+
+ //sidenote -- you need to disconnect from a db in sqlite to make changes in the terminal, or you will get hella errors
