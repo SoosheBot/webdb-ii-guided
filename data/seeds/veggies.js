@@ -6,6 +6,7 @@ exports.seed = function(knex) {
     .truncate() //empties the table and resets the primary key (id)
     .then(function () {
       // Inserts seed entries
+      // CHANGE THE TABLE NAME --EVERYWHERE
       return knex('veggies').insert([
         {name: 'broccoli', like_it:1},
         {name:  'carrot', like_it:0},
