@@ -4,7 +4,9 @@
 
 //each key on the exported object has the configuration for a db environment, (dev, production, testing, etc)
 
+// the knex CLI will use the configuration on this file to find the db
 
+//the knex CLI will use the "development" environment by default but we can override that behavior.
 
 module.exports = {
 
@@ -17,6 +19,9 @@ module.exports = {
     migrations: {
       directory: './data/migrations' //will be created automatically, unless you write this, then it tells it what to look at/teaches it how to connect
     },
+    seeds: {
+      directory: './data/seeds'
+    }
 
   },
 };
