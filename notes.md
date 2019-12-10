@@ -17,3 +17,7 @@ Migrations keep your db design in sync with the application code
  To run a migration type: `knex migrate:latest` //updates database to latest version
 
  //sidenote -- you need to disconnect from a db in sqlite to make changes in the terminal, or you will get hella errors
+
+ To create a seed `knex make:seed NAMEOFSEED -- we used 'veggies' in this example'`
+
+ To run the seed `knex seed:run`
